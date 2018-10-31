@@ -7,7 +7,7 @@
   },
   "spec": {
     "storageClassName": "jenkins-pv",
-    "accessModes": ["ReadWriteMany"],
+    "accessModes": ["ReadWriteOnce"],
     "capacity": {
       "storage": "1Gi"
     },
