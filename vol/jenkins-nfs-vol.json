@@ -7,13 +7,13 @@
   },
   "spec": {
     "storageClassName": "jenkins-pv",
-    "accessModes": ["ReadWriteOnce"],
+    "accessModes": ["ReadWriteMany"],
     "capacity": {
       "storage": "1Gi"
     },
     "persistentVolumeReclaimPolicy": "Retain",
     "hostPath": {
-      "path": "/data/webdata/k8sdockershared/"
+      "path": "/data/webdata/k8sdockershared/jenkins-volume/"
     }
   }
 }
